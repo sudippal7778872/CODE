@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head> 
+    <title>Id & Class selector</title>
+    <style type="text/css">
+        /* syntax
+        #selector{
+            property:value;
+            property:value;
+        }
+        # --is represented that it is a id selector.
+        we can use multiple class for one tag. but IDs are unique.
+
+        for specific tag you can use id selector like-
+        h1#red-border{
+                    property:value;
+        }
+        it will be only applied only to h1 tag. for other tag it wont be applied.
+        ID has more preferance than class.
+        */
+        .green-border{
+            border-style: solid;    
+            border-color: green;
+        }
+        .red-border{
+            border-style: solid;
+            border-color: red;
+        }
+        #green-border{
+            border-style: solid;    
+            border-color: green;
+        }
+        #red-border{
+            border-style: solid;
+            border-color: red;
+        }
+        .text-style{
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="green-border" id="red-border">Hi</h1>
+    <p class="red-border text-style">How are you? </p>
+    <p id = "green-border"> This is a paragraph. </p>
+    <p id="red-border"> This is another paragraph. </p>
+</body>

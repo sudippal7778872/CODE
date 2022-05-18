@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head> 
+    <title>class selector</title>
+    <style type="text/css">
+        /* syntax
+        .selector{
+            property:value;
+            property:value;
+        }
+        . --is represented that it is a class selector.
+        we can use multiple class for one tag.
+
+        for specific tag you can use class selector like-
+        h1.red-border{
+                    property:value;
+        }
+        it will be only applied to h1 tag.
+        */
+        .green-border{
+            border-style: solid;    
+            border-color: green;
+        }
+        .red-border{
+            border-style: solid;
+            border-color: red;
+        }
+        .text-style{
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="green-border text-style">Hi</h1>
+    <p class="red-border text-style">How are you? </p>
+    <p> This is a paragraph. </p>
+    <p> This is another paragraph. </p>
+</body>

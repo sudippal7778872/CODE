@@ -1,0 +1,35 @@
+<!doctype>
+<html>
+<head>
+<title> Document object Method lecture 8</title>
+<script>
+function f1()
+{
+var x=document.getElementById("p1");
+alert(x.innerHTML);
+x.innerHTML="modified id";
+var y=document.getElementsByClassName("c1");
+alert(y[0].innerHTML);
+alert(y[1].innerHTML);
+y[0].innerHTML="modified class 1";
+y[1].innerHTML="modified class 2";
+document.getElementsByTagName("h1");
+document.getElementsByName();
+}
+</script>
+</head>
+<body>
+<h1> 1st header </h1>
+<h2> 2nd header </h2>
+<h3> 3rd header </h3>
+<h4> 4th header </h4>
+<h5 class="c1"> 5th header </h5>
+<h6 class="c1"> 6th header </h6>
+<p id="p1"> 1st paragraph </p>
+<p id="p2"> 2nd paragraph </p>
+<p id="p3"> 3rd paragraph </p>
+<p id="p4"> 4th paragraph </p>
+<p class="c1"> 5th paragraph </p>
+<button onclick="f1()"> Cick Here </button>
+</body>
+</html>

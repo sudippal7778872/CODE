@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+
+<style>
+img{display:none;}
+p{font-size:30px; font-weight:bold;font-style:italic;}
+</style>
+
+<script src="JQuery.js"></script>
+<script>
+$(document).ready(function(){ 
+$("#b1").click(function(){ 
+if($("#b1").html()=="show")
+{  
+$("#b1").html("hide") ;
+$("img").show();            
+}
+else
+{
+$("#b1").html("show");
+$("img").hide();
+}
+})
+})
+</script>
+</head>
+<body>
+<button id="b1"> Show</button></br>
+<img src="H:\WALLPAPERCRAFT/193853.jpg" height="500" weidth="600px"/>
+<p>
+  // ready is a function. when the page is loaded. then only all events are ready to occure.</br>
+   //click is function, when we click on the selector #b1 the event will occure.</br>
+//html is a function which is used to change the content of #b1</br>
+</p>
+</body>
+</html>

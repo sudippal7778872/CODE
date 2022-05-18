@@ -1,0 +1,26 @@
+<!Doctype html>
+<html>
+<head>
+<title>Descendant Combinator</title>
+<style>
+#container .box {
+	float: left;
+	padding-bottom: 15px;
+	background-color: yellow;
+} 
+</style>
+</head>
+<body>
+<p><i>Descendant Combinator: The descendant selector or, more accurately, 
+the descendant combinator lets you combine two or more selectors 
+so you can be more specific in your selection method.</i></p>
+<div id="container">division 1 with id container.
+	<div class="box"> division 2 with class box inside division 1.</div>
+	
+	<div class="box-2">division 3 with class box-2 inside division 1</div>
+</div>
+
+<div class=”box”>division 4 with class box outside division 1.</div>
+
+<body>
+</html>

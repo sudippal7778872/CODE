@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<title> This is lecture 12 about Email validation</title>
+
+<script>
+function validate()
+{
+var r=true;
+var i=document.getElementsByName("email")[0].value;
+var atindex=i.indexOf('@');
+var dotindex=i.lastIndexOf('.');
+if(atindex<1 || dotindex>=i.length-2 || dotindex-atindex<3)
+{
+r=false;
+}
+return(r);
+}
+</script>
+
+</head>
+<body>
+<h2> Welcome to the page about Email Validation</h2>
+<form action="registration.php" method="post" onsubmit="return validate()">
+Name : <input type="text" name="username">
+Email Id: <input type="text" name="email" required/>
+<input type="submit" value="registered">
+</form>
+</body>
+</html>

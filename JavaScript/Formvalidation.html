@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function validation()
+{
+var r=true;
+var i=document.getElementsByTagName("input");
+if(i[0].value.length==0 || i[1].value.length==0)
+{
+r=false;
+}
+return(r);
+}
+</script>
+</head>
+<body>
+<h2> Welcome</h2>
+<form action="registration.php" method="post" onsubmit="return validation()">
+Name: <input type="text" placeholder="Enter your Name" name="username"/>
+Password :<input type="password" name="password" placeholder="Enter your Password"/>
+<input type="submit" value="submit">
+</form>
+
+</body>
+</html>

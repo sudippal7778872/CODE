@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+   <script>
+     function allowDrop(ev) {
+       ev.preventDefault();
+     }
+     function drop(ev) {
+       ...
+     }
+   </script>
+ </head>
+ <body>
+   ...
+   <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="border: 1px solid #aaaaaa; width:350px; height: 70px;"></div>
+   <br>
+   <img id="drag1" src="sudip formal.jpg" draggable="true" width="336" height="69">
+    ...
+ </body>
+</html>

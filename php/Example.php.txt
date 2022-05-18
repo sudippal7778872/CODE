@@ -1,0 +1,19 @@
+<?php 
+$x=23;
+$y="sudip";$z=17;
+?>
+<html>
+<head>
+<style> 
+h1{color: blue;text-transform:capitalize;}
+p{color:green;}
+</style>
+<head>
+<body>
+<h1> This is a header </h1>
+<p> This is  <?php &u=($x+$z) $y ?>an paragraph</p>
+<script>
+document.write("this is java Script");
+</script>
+</body>
+</html>

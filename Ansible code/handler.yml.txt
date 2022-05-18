@@ -1,0 +1,12 @@
+---
+- hosts: demo
+  user: ansible
+  become: yes
+  connection: ssh
+  tasks:
+      - name: Installed HTTPD on RHEL7
+        action: yum name=httpd state=present
+        notify: R
+  handlers:
+      - name: R
+        action: service name=httpd state=restarted

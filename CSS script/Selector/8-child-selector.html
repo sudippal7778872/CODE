@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head> 
+    <title>Child Selector</title>
+    <style type="text/css">
+        /* syntax
+        selector>selector{
+            property:value;
+        }
+        apply only on specified parent's child selector. 
+        */
+        p>a{
+            color: red;    
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 >Hi</h1>
+    <p>How are you? </p>
+    <p> This is a <a href="paragraph">paragraph </a>. </p>
+    <p> This is another paragraph. </p>
+</body>

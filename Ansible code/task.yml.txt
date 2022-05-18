@@ -1,0 +1,8 @@
+---
+- hosts: demo
+  user: ansible
+  become: yes
+  connection: ssh
+  tasks:
+        - name: Install HTTPD on RHEL7
+          action: yum name=httpd state=present

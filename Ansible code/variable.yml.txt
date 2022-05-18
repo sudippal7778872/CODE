@@ -1,0 +1,10 @@
+---
+- hosts: demo
+  user: ansible
+  become: yes
+  connection: ssh
+  vars:
+      pkgname: httpd
+  tasks:
+      - name: Install HTTPD server on RHEL7
+        action: yum name='{{pkgname}}' state=present
